@@ -5,12 +5,16 @@
     <projectFile profileName="AuthorAPI">AuthorAPI/AuthorAPI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ce33c9-9de1-4cf3-815e-3a8ae3e72860" name="Changes" comment="Added API template">
-      <change afterPath="$PROJECT_DIR$/AuthorAPI/Models/Author.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorAPI/Models/Book.cs" afterDir="false" />
+    <list default="true" id="e2ce33c9-9de1-4cf3-815e-3a8ae3e72860" name="Changes" comment="added models classes">
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db-wal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/DataAccess/AuthorDBContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/Migrations/20220105161558_InitialCreate.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/Migrations/20220105161558_InitialCreate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/Migrations/AuthorDBContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthorAPI/AuthorAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorAPI/AuthorAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestExamDNP1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TestExamDNP1.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -76,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641397363182</updated>
-      <workItem from="1641397366101" duration="917000" />
+      <workItem from="1641397366101" duration="2302000" />
     </task>
     <task id="LOCAL-00001" summary="Added API template">
       <created>1641397667714</created>
@@ -85,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641397667714</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added models classes">
+      <created>1641398371654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641398371654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +121,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added API template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added API template" />
+    <MESSAGE value="added models classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added models classes" />
   </component>
 </project>
