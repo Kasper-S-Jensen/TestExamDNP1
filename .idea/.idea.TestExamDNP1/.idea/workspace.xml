@@ -8,27 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2ce33c9-9de1-4cf3-815e-3a8ae3e72860" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IAuthorService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IBookService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/AuthorServiceImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/BookServiceImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Models/Author.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Models/Book.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/CreateAuthor.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/CreateBook.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorAPI/Authors.db" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorAPI/Authors.db-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorAPI/Authors.db-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/WeatherForecastService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/Counter.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/FetchData.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IAuthorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IAuthorService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IBookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IBookService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/AuthorServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/AuthorServiceImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/BookServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/BookServiceImpl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/Index.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Shared/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Shared/SurveyPrompt.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +119,7 @@
       <updated>1641397363182</updated>
       <workItem from="1641397366101" duration="4245000" />
       <workItem from="1641465135178" duration="3994000" />
-      <workItem from="1641469242567" duration="2234000" />
+      <workItem from="1641469242567" duration="8153000" />
     </task>
     <task id="LOCAL-00001" summary="Added API template">
       <created>1641397667714</created>
@@ -162,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641469652482</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented services for book and authors on client side. Code cleanup">
+      <created>1641471747498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641471747498</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +183,26 @@
     <MESSAGE value="added models classes" />
     <MESSAGE value="Added database using EFC" />
     <MESSAGE value="Updated controllers. Added Blazor Server App template." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated controllers. Added Blazor Server App template." />
+    <MESSAGE value="implemented services for book and authors on client side. Code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented services for book and authors on client side. Code cleanup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/AuthorServiceImpl.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\kaspe\Documents\Git\TestExamDNP1\AuthorBlazor\Data\Service\Impl\AuthorServiceImpl.cs" initialLine="27" containingFunctionPresentation="method 'GetAuthorsAsync'">
+            <startOffsets>
+              <option value="955" />
+            </startOffsets>
+            <endOffsets>
+              <option value="981" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

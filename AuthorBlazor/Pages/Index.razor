@@ -1,15 +1,121 @@
 @page "/"
+@using AuthorBlazor.Data.Service
+@using AuthorBlazor.Models
+@inject IBookService bookService
+@inject IAuthorService authorService
+@inject NavigationManager NavMgr
+
 
 <h1>Books</h1>
 
+<p> Search: <input type="text" @oninput="@(arg => FilterByUserInput(arg))" style="width:200px"/> </p>
 
 
-
-
-
-@code
+@if (booksToShow == null || allAuthors == null)
 {
-    
-    
-    
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else if (!booksToShow.Any())
+{
+    <p>
+        <em>No books exist. Please add some.</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>title</th> <th>PubYear</th> <th>NumOfPages</th> <th>AuthorFirstName</th><th>AuthorLastName</th> <th>manage</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        @foreach (var author in authorsToShow)
+        {
+            @foreach (var item in author.Books)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.PublicationYear</td>
+                    <td>@item.NumOfPages</td>
+                    <td>@author.FirstName </td>
+                    <td>@author.LastName </td>
+                    <td>
+                        <button @onclick="@(() => RemoveBook(item.ISBN))">
+                            <i class="oi oi-trash" style="color:red"/>
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+
+        @*<td>@author.FirstName</td>
+        <td>@author.LastName</td>*@
+
+
+
+        </tbody>
+    </table>
+}
+
+@code {
+
+    private IList<Book> booksToShow = new List<Book>();
+    private IList<Book> allbooks = new List<Book>();
+    private IList<Author> allAuthors = new List<Author>();
+    private IList<Author> authorsToShow = new List<Author>();
+    private string filterText;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        allAuthors = await authorService.GetAuthorsAsync();
+        authorsToShow = allAuthors;
+        foreach (var author in allAuthors)
+        {
+            if (author.Books.Count != 0)
+            {
+                foreach (var book in author.Books)
+                {
+                    allbooks.Add(book);
+                }
+            }
+        }
+        booksToShow = allbooks;
+    }
+
+
+    private void FilterByUserInput(ChangeEventArgs changeEventArgs)
+    {
+        filterText = null;
+        try
+        {
+            filterText = changeEventArgs.Value.ToString();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        ExecuteFilter();
+    }
+
+
+    private void ExecuteFilter()
+    {
+        authorsToShow = allAuthors.Where(author => (filterText != null && author.FirstName.ToLower().Contains(filterText.ToLower()) || filterText == null)).ToList();
+    }
+
+
+    private async Task RemoveBook(int isbn)
+    {
+        Book bookToRemove = allbooks.First(b => b.ISBN == isbn);
+        await bookService.RemoveBookAsync(isbn);
+        allbooks.Remove(bookToRemove);
+        booksToShow.Remove(bookToRemove);
+    }
+
+
 }

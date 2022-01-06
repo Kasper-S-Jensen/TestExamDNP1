@@ -10,23 +10,23 @@ namespace AuthorBlazor.Data.Service.Impl
 {
     public class AuthorServiceImpl : IAuthorService
     {
-        private string path = "https://localhost:5003/Author";
-        
-        public async Task<IList<Author>> GetAuthorAsync()
+        private string path = "https://localhost:5001/api/Author";
+
+        public async Task<IList<Author>> GetAuthorsAsync()
         {
             using HttpClient client = new HttpClient();
             HttpResponseMessage responseMessage = await client.GetAsync($"{path}");
-
+            Console.WriteLine(responseMessage);
             if (!responseMessage.IsSuccessStatusCode)
             {
                 var errResponse = await responseMessage.Content.ReadAsStringAsync();
                 Console.WriteLine(errResponse);
                 throw new Exception(errResponse);
-                
             }
-            string result = await responseMessage.Content.ReadAsStringAsync();
 
-            List<Author> authors = JsonSerializer.Deserialize<List<Author>>(result,
+            string result = await responseMessage.Content.ReadAsStringAsync();
+            Console.WriteLine(result);
+            var authors = JsonSerializer.Deserialize<List<Author>>(result,
                 new JsonSerializerOptions {PropertyNamingPolicy = JsonNamingPolicy.CamelCase});
 
             return authors;
@@ -44,7 +44,6 @@ namespace AuthorBlazor.Data.Service.Impl
                 var errResponse = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(errResponse);
                 throw new Exception(errResponse);
-                
             }
         }
 

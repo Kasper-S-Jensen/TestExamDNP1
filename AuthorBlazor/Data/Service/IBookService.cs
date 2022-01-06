@@ -6,7 +6,7 @@ namespace AuthorBlazor.Data.Service
 {
     public interface IBookService
     {
-        Task<IList<Book>> GetBookAsync();
+        Task<IList<Book>> GetBooksAsync();
         Task AddBookAsync(Book book, int AuthorID);
         Task RemoveBookAsync(int bookISBN);
         Task<Book> UpdateAsync(Book book);
