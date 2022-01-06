@@ -8,46 +8,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2ce33c9-9de1-4cf3-815e-3a8ae3e72860" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorAPI/Controllers/BookController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/App.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/AuthorBlazor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/WeatherForecastService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/Counter.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/Error.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/FetchData.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/Index.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/_Host.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Shared/MainLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Shared/MainLayout.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Shared/NavMenu.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Shared/NavMenu.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Shared/SurveyPrompt.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/bootstrap/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/FONT-LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/ICON-LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorBlazor/wwwroot/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IAuthorService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IBookService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/AuthorServiceImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/BookServiceImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Models/Author.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Models/Book.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/CreateAuthor.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/CreateBook.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthorAPI/Authors.db" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorAPI/Controllers/AuthorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorAPI/Controllers/AuthorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestExamDNP1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TestExamDNP1.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorAPI/Authors.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorAPI/Authors.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/WeatherForecastService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/FetchData.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Shared/SurveyPrompt.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +60,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AuthorAPI">
+  <component name="RunManager" selected=".NET Launch Settings Profile.AuthorBlazor">
     <configuration name="AuthorAPI" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AuthorAPI/AuthorAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
@@ -151,7 +132,7 @@
       <updated>1641397363182</updated>
       <workItem from="1641397366101" duration="4245000" />
       <workItem from="1641465135178" duration="3994000" />
-      <workItem from="1641469242567" duration="339000" />
+      <workItem from="1641469242567" duration="2234000" />
     </task>
     <task id="LOCAL-00001" summary="Added API template">
       <created>1641397667714</created>
@@ -174,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641399787883</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated controllers. Added Blazor Server App template.">
+      <created>1641469652482</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641469652482</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +188,7 @@
     <MESSAGE value="Added API template" />
     <MESSAGE value="added models classes" />
     <MESSAGE value="Added database using EFC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added database using EFC" />
+    <MESSAGE value="Updated controllers. Added Blazor Server App template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated controllers. Added Blazor Server App template." />
   </component>
 </project>

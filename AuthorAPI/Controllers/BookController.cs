@@ -72,7 +72,7 @@ namespace AuthorAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Book
+        // POST: api/Book/5
         [HttpPost("{id}")]
         public async Task<ActionResult<Book>> PostBook(Book book, int id)
         {
