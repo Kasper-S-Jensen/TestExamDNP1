@@ -25,14 +25,14 @@ namespace AuthorAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Author>>> GetAuthors()
         {
-            return await _context.Authors.ToListAsync();
+            return await _context.Authors.Include(author => author.Books).ToListAsync();
         }
 
         // GET: api/Author/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Author>> GetAuthor(int id)
         {
-            var author = await _context.Authors.FindAsync(id);
+            var author = await _context.Authors.Include(author1 => author1.Books).FirstOrDefaultAsync(author1 => author1.ID==id);
 
             if (author == null)
             {
@@ -43,9 +43,8 @@ namespace AuthorAPI.Controllers
         }
 
         // PUT: api/Author/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAuthor(int id, Author author)
+        public async Task<IActionResult> UpdateAuthor(int id, Author author)
         {
             if (id != author.ID)
             {
@@ -74,9 +73,8 @@ namespace AuthorAPI.Controllers
         }
 
         // POST: api/Author
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Author>> PostAuthor(Author author)
+        public async Task<ActionResult<Author>> CreateAuthor(Author author)
         {
             _context.Authors.Add(author);
             await _context.SaveChangesAsync();
