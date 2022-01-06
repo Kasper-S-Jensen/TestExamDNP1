@@ -1,6 +1,34 @@
 ﻿@page "/CreateAuthor"
-<h3>CreateAuthor</h3>
+@using AuthorBlazor.Data.Service
+@using AuthorBlazor.Models
+@inject IAuthorService authorService
+@inject NavigationManager NavMgr
+
+<h3>Create author</h3>
+
+
+<EditForm Model="@newAuthor" OnValidSubmit="@AddNewAuthor">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <div class="form-group">
+        First name:<br/>
+        <InputTextArea @bind-Value="newAuthor.FirstName"/>
+    </div>
+    <div class="form-group">
+        Last name:<br/>
+        <InputTextArea @bind-Value="newAuthor.LastName"/>
+    </div>
+    <p class="actions">
+        <button class="btn btn-outline-dark" type="submit">Create</button>
+    </p> </EditForm>
 
 @code {
-    
+    private Author newAuthor = new Author();
+
+    private async Task AddNewAuthor()
+    {
+        await authorService.AddAuthorAsync(newAuthor);
+        NavMgr.NavigateTo("/");
+    }
+
 }

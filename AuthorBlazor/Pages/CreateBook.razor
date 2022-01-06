@@ -1,6 +1,79 @@
 ﻿@page "/CreateBook"
-<h3>CreateBook</h3>
+@using AuthorBlazor.Models
+@using Microsoft.AspNetCore.Components
+@using AuthorBlazor.Data.Service
+@inject IBookService bookService
+@inject IAuthorService authorService
+@inject NavigationManager NavMgr
+<h3>Create Book</h3>
+
+
+@if (allAuthors == null || allAuthors == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else if (!allAuthors.Any())
+{
+    <p>
+        <em>No authors exist. Please add some.</em>
+    </p>
+}
+else
+{
+    <EditForm Model="@newBook" OnValidSubmit="@AddNewBook">
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+        <div class="form-group">
+            ISBN:<br/>
+            <InputNumber @bind-Value="newBook.ISBN"/>
+        </div>
+        <div class="form-group">
+            Title:<br/>
+            <InputTextArea rows="4" @bind-Value="newBook.Title"/>
+        </div>
+        <div class="form-group">
+            Year:<br/>
+            <InputNumber @bind-Value="newBook.PublicationYear"/>
+        </div>
+        <div class="form-group">
+            pages:<br/>
+            <InputNumber @bind-Value="newBook.NumOfPages"/>
+        </div>
+
+        <InputSelect id="Authors" @bind-Value="authorID">
+            @foreach (var author in allAuthors)
+            {
+                <option value="@author.ID">@author.FirstName @author.LastName</option>
+            }
+        </InputSelect>
+
+        <p class="actions">
+            <button class="btn btn-outline-dark" type="submit">Create</button>
+        </p>
+    </EditForm>
+}
 
 @code {
-    
+    int authorID;
+    private IList<Author> allAuthors = new List<Author>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        allAuthors = await authorService.GetAuthorsAsync();
+    }
+
+
+    private Book newBook = new Book();
+
+    private async Task AddNewBook()
+    {
+        await bookService.AddBookAsync(newBook, authorID);
+        NavMgr.NavigateTo("/");
+    }
+
+
+
 }

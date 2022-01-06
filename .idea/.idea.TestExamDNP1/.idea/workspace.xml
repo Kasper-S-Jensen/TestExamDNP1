@@ -7,15 +7,12 @@
     <projectFile profileName="IIS Express">AuthorBlazor/AuthorBlazor.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ce33c9-9de1-4cf3-815e-3a8ae3e72860" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db-shm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db-wal" afterDir="false" />
+    <list default="true" id="e2ce33c9-9de1-4cf3-815e-3a8ae3e72860" name="Changes" comment="added page to view all books with author info">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestExamDNP1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IAuthorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IAuthorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IBookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/IBookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/AuthorServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/AuthorServiceImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorAPI/Authors.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorAPI/Authors.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/BookServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Data/Service/Impl/BookServiceImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/CreateAuthor.razor" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/CreateAuthor.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorBlazor/Pages/CreateBook.razor" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorBlazor/Pages/CreateBook.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,7 @@
       <updated>1641397363182</updated>
       <workItem from="1641397366101" duration="4245000" />
       <workItem from="1641465135178" duration="3994000" />
-      <workItem from="1641469242567" duration="8153000" />
+      <workItem from="1641469242567" duration="10406000" />
     </task>
     <task id="LOCAL-00001" summary="Added API template">
       <created>1641397667714</created>
@@ -156,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641471747498</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added page to view all books with author info">
+      <created>1641477698722</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641477698722</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +188,8 @@
     <MESSAGE value="Added database using EFC" />
     <MESSAGE value="Updated controllers. Added Blazor Server App template." />
     <MESSAGE value="implemented services for book and authors on client side. Code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented services for book and authors on client side. Code cleanup" />
+    <MESSAGE value="added page to view all books with author info" />
+    <option name="LAST_COMMIT_MESSAGE" value="added page to view all books with author info" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

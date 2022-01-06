@@ -11,7 +11,7 @@ namespace AuthorBlazor.Data.Service.Impl
     public class BookServiceImpl : IBookService
     {
         
-        private string path = "https://localhost:5003/api/Book";
+        private string path = "https://localhost:5001/api/Book";
         
         public async Task<IList<Book>> GetBooksAsync()
         {
