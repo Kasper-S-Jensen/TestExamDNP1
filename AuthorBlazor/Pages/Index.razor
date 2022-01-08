@@ -51,12 +51,6 @@ else
                 </tr>
             }
         }
-
-        @*<td>@author.FirstName</td>
-        <td>@author.LastName</td>*@
-
-
-
         </tbody>
     </table>
 }
@@ -86,8 +80,6 @@ else
         }
         booksToShow = allbooks;
     }
-    
-    
 
 
     private void FilterByUserInput(ChangeEventArgs changeEventArgs)
@@ -117,7 +109,7 @@ else
         await bookService.RemoveBookAsync(isbn);
         allbooks.Remove(bookToRemove);
         booksToShow.Remove(bookToRemove);
-        
+
         allAuthors = await authorService.GetAuthorsAsync();
         authorsToShow = allAuthors;
         foreach (var author in allAuthors)
